@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.background-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.keyboard-container {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.keyboard-key {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+}
+
+.keyboard-key.special {
+    background-color: #666;
+    color: #fff;
+}
+
+.keyboard-key:hover {
+    background-color: #ddd;
+}
+
+.keyboard-key.special:hover {
+    background-color: #555;
+}
+
+.keyboard-key:active {
+    transform: translateY(8px);
+    box-shadow: 0 0 2px #999 inset;
+}
+
+.w-15 {
+    width: 65px;
+}
+
+.w-2 {
+    width: 90px;
+}
+
+.w-32 {
+    width: 260px;
+}
